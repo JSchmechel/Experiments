@@ -1,17 +1,20 @@
 /*
  * c_learning.c
  *
+ * Contains the main method. Change the method called in main to change
+ * the program you want to start.
+ *
  *  Created on: May 13, 2022
- *      Author: johannes
+ *      Author: Johannes Schmechel
  */
 
 #include <stdio.h>
 
-#include "./hello_world/hello_world.h"
+#include "./c_002_some_text/some_text.h"
 
 int main() {
 
-	return hello_world();
+	return some_text();
 
 }
 

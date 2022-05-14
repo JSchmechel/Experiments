@@ -1,0 +1,18 @@
+1. Install antlr4:
+> sudo apt-get install antlr4
+
+2. Install the antlr4 c++ library:
+> sudo apt-get install libantlr4-runtime
+
+3. Make sure the folder that contains the header files
+for antlr is included in your include-paths.
+This usually is the following path:
+> /usr/include/antlr4-runtime
+
+4. Make sure flags for the library are given to the
+linker. This is is the following flag:
+> -lantlr4-runtime
+
+5. The flag from 4 points to a file libantlr-runtime.so.
+Check whether this file is in a folder where it can be
+found.

@@ -1,20 +1,22 @@
 //============================================================================
-// Name        : antlr_parser.cpp
-// Author      : 
+// Name        : parser.hpp
+// Author      :
 // Version     :
 // Copyright   : Your copyright notice
 // Description : Hello World in C, Ansi-style
 //============================================================================
 
-#include <iostream>
-#include "antlr4-runtime/antlr4-runtime.h"
+#ifndef PARSER_H_
+#define PARSER_H_
 
-#include "parser/parser.hpp"
+/**
+ * Provides us with the necessary methods to parse an arithmetic expression.
+ */
+class Parser {
 
-int main(int argc, const char* argv[]) {
+	public:
+		int parse_file(int argc, const char* argv[]);
 
-	Parser* parser = new Parser();
+};
 
-	parser->parse_file(argc, argv);
-
-}
+#endif

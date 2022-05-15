@@ -1,5 +1,5 @@
 
-// Generated from Scene.g4 by ANTLR 4.7.2
+// Generated from Expression.g4 by ANTLR 4.7.2
 
 #pragma once
 
@@ -9,18 +9,15 @@
 
 
 
-class  SceneLexer : public antlr4::Lexer {
+class  ExpressionLexer : public antlr4::Lexer {
 public:
   enum {
-    T__0 = 1, T__1 = 2, DRAW = 3, WRITE = 4, IN = 5, AT = 6, CIRCLE = 7, 
-    SQUARE = 8, SMALL = 9, MEDIUM = 10, BIG = 11, LEFT = 12, RIGHT = 13, 
-    CENTER = 14, TOP = 15, BOTTOM = 16, STRING = 17, BLACK = 18, BLUE = 19, 
-    BROWN = 20, GREEN = 21, RED = 22, ORANGE = 23, PURPLE = 24, YELLOW = 25, 
-    WHITE = 26, NAME = 27, NEWLINE = 28, TAB = 29, WHITESPACE = 30
+    T__0 = 1, T__1 = 2, T__2 = 3, T__3 = 4, T__4 = 5, T__5 = 6, INT = 7, 
+    ID = 8, WS = 9
   };
 
-  SceneLexer(antlr4::CharStream *input);
-  ~SceneLexer();
+  ExpressionLexer(antlr4::CharStream *input);
+  ~ExpressionLexer();
 
   virtual std::string getGrammarFileName() const override;
   virtual const std::vector<std::string>& getRuleNames() const override;
